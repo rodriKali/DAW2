@@ -1,0 +1,2 @@
+require("./saludar.js");
+saludar();

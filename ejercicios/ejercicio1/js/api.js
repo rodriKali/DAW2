@@ -4,15 +4,15 @@ export async function obtenerImagen(fecha) {
     return;
   }
 
-  const apiKey = "DEMO_KEY"; // Reemplázala con tu propia API Key si puedes
+  const apiKey = "DEMO_KEY";
   const url = `https://api.nasa.gov/planetary/apod?date=${fecha}&api_key=${apiKey}`;
 
   try {
     const respuesta = await fetch(url);
     const datos = await respuesta.json();
-    console.log("Datos obtenidos:", datos); // Para depuración
+    console.log("Datos obtenidos:", datos);
 
-    return datos; // Retornamos los datos en lugar de manipular el DOM aquí
+    return datos;
   } catch (error) {
     console.error("Error al obtener la imagen:", error);
     alert("Hubo un problema al cargar la imagen. Inténtalo de nuevo.");

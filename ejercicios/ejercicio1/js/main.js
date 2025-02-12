@@ -12,7 +12,7 @@ document.getElementById("btn-ver").addEventListener("click", async () => {
     document.getElementById("explicacion").textContent = datos.explanation;
 
     const mediaContainer = document.getElementById("media");
-    mediaContainer.innerHTML = ""; // Limpiar contenido previo
+    mediaContainer.innerHTML = "";
 
     if (datos.media_type === "image") {
       mediaContainer.innerHTML = `<img src="${datos.url}" alt="Imagen de la NASA">`;
