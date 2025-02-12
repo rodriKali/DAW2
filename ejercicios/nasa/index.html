@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA APOD</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      #apod-container {
+        margin-top: 20px;
+      }
+      img,
+      iframe {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Imagen Astronómica del Día</h1>
+    <label for="fecha">Selecciona una fecha:</label>
+    <input type="date" id="fecha" />
+    <button id="btn-ver">Ver Imagen</button>
+
+    <div id="apod-container">
+      <h2 id="titulo"></h2>
+      <p id="fecha-seleccionada"></p>
+      <div id="media"></div>
+      <p id="explicacion"></p>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
